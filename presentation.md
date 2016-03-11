@@ -12,7 +12,7 @@ Seeing the sun shining
 - Maybe, because I have an aim I follow and there is not much which can actually distract me from that aim.
 - Based on the fact that I have to work on the library, it is nicer to see the sun shining.
  	- Clear reason to get a spot at a window btw. 
-- Nice that we there is some additional space after a nested bullet.
+
 
 ---------------------
 
