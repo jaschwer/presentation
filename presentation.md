@@ -150,13 +150,16 @@ Figure 2
 
 ![](images/quality1.png)
 
+
+---------------------------------------------
+
 - we can also do a figure from the web
 	- But I actually prefer a funny meme
 		- Because I like them
 - Cool, different types of points for nested bullets
 	- Nice
 
----------
+---------------------------------------------
 
 Figure 3
 -----------
