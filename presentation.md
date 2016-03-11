@@ -3,17 +3,35 @@
 % Whatever, Tilburg University
 
 
-Hallo
+Random Thoughts
 ================
-- Why do I not enjoy the sun? Because I have to work. Because I have an aim I follow and there is not much which can actually distract me from that aim
-- I do allow social life to make me happy, and make my social life happy.
-- This is not a contradiction
-- $x+1 = y$
+Seeing the sun shining
+---------------------
+- Why do I not enjoy the sun, while sitting in the library? 
+- I mean, I have to work and cannot enjoy the sun.
+- Maybe, because I have an aim I follow and there is not much which can actually distract me from that aim.
+- Based on the fact that I have to work on the library, it is nicer to see the sun shining.
+ 	- Clear reason to get a spot at a window btw. 
+- Nice that we there is some additional space after a nested bullet.
 
-Heading 1
+---------------------
+
+More Cheese = Less Cheese
+---------------------
+
+- More Chesse = More Holes
+- More Holes = Less Cheese
+- More Cheese = Less Cheese
+
+just saying...
+
+---------------------
+
+
+Question 1
 ================
 
-a
+subquestion a
 ----------
 
 <span>eststo: reg lnc lnp lny, cluster(state)</span>\
@@ -21,8 +39,8 @@ Results can be seen in Table 1
 
 --------
 
-b 
--
+subquestion b
+----------
 
 <span>quietly tab year, gen(period)</span>\
 <span>eststo: xtreg lnc lnp lny period\*,fe cluster(state)</span>\
@@ -30,6 +48,7 @@ b
 <span>xtserial lnc lnp lny</span>\
 $$\begin{align*}
 lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}$$
+- Model of interest
 
 --------
 
@@ -53,10 +72,14 @@ serial correlation, the FD regression should generally be preferred.
 
 --------
 
-Heading 2
+I guess it is okay to make the presentation a bit shorter than the normal file
+
+--------
+
+Question 2
 ==========
 
-a - some math
+Some Math
 ----------
 
 $$\begin{align*}
@@ -71,7 +94,7 @@ $$\begin{align*}
 & E[y_{i} | a^{l}_{i}=1, s_{i}=1] = \alpha + \beta - \frac{1}{\pi_{2}}(\gamma (\pi_{0}+(\pi_{1}-1)+\tau(\pi_{0}+\pi_{1}-1))\\
 \end{align*}$$
 
-b - even mor math
+More Math
 --------------
 
 $$\begin{align*}
@@ -80,9 +103,7 @@ $$\begin{align*}
 & E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{0}{\pi_{2}}-\frac{\tau}{\pi_{2}}(0+0) = \beta \\
 \end{align*}$$
 
-New Heading 3
-================
-Just a bit of math
+Even More Math
 -----------
 
 Partial derivatives of the expenditure function with respect to prices\
@@ -96,14 +117,14 @@ $$\begin{align*}
 
 Figures
 =================
+Because figures are fun. First your figure, then my own one, both with a different width
 
-
-![](images/quality1.png)
+![](images/quality1.png){width="50.00000%"}
 
 --------------
 
 
-![](images/gr_1.png)
+![](images/gr_1.png){width="80.00000%"}
 
 ---------
 
@@ -111,6 +132,7 @@ Figures
 	- But I actually prefer a funny meme
 		- Because I like them
 - Cool, different types of points for nested bullets
+	- Nice
 
 ---------
 
@@ -125,6 +147,8 @@ Conclusion
 ----------
 
 I hope we did not have contruct a presentaiton which makes completely sense
+
+I keep the following to know the codes for an easy copy and past:
 
 - to get the html, type the following on one line:
 
