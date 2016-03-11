@@ -39,11 +39,13 @@
 <li><a href="#/question-1">Question 1</a></li>
 <li><a href="#/question-2">Question 2</a></li>
 <li><a href="#/figures">Figures</a></li>
+<li><a href="#/conclusion">Conclusion</a></li>
 </ul>
 </section>
 
-<section><section id="random-thoughts" class="titleslide slide level1"><h1>Random Thoughts</h1></section><section id="seeing-the-sun-shining" class="slide level2">
-<h1>Seeing the sun shining</h1>
+<section id="random-thoughts" class="slide level1">
+<h1>Random Thoughts</h1>
+<h2 id="seeing-the-sun-shining">Seeing the sun shining</h2>
 <ul>
 <li>Why do I not enjoy the sun, while sitting in the library?</li>
 <li>I mean, I have to work and cannot enjoy the sun.</li>
@@ -54,46 +56,62 @@
 </ul></li>
 <li>Nice that we there is some additional space after a nested bullet.</li>
 </ul>
-</section><section id="more-cheese-less-cheese" class="slide level2">
-<h1>More Cheese = Less Cheese</h1>
+</section>
+<section class="slide level1">
+
+<h2 id="more-cheese-less-cheese">More Cheese = Less Cheese</h2>
 <ul>
 <li>More Chesse = More Holes</li>
 <li>More Holes = Less Cheese</li>
 <li>More Cheese = Less Cheese</li>
 </ul>
 <p>just saying...</p>
-</section><section class="slide level2">
-
-</section></section>
-<section><section id="question-1" class="titleslide slide level1"><h1>Question 1</h1></section><section id="subquestion-a" class="slide level2">
-<h1>subquestion a</h1>
+</section>
+<section id="question-1" class="slide level1">
+<h1>Question 1</h1>
+<h2 id="subquestion-a">subquestion a</h2>
 <p><span>eststo: reg lnc lnp lny, cluster(state)</span><br />
 Results can be seen in Table 1</p>
-</section><section id="subquestion-b" class="slide level2">
-<h1>subquestion b</h1>
+</section>
+<section class="slide level1">
+
+<h2 id="subquestion-b1">subquestion b(1)</h2>
 <p><span>quietly tab year, gen(period)</span><br />
 <span>eststo: xtreg lnc lnp lny period*,fe cluster(state)</span><br />
 <span>eststo: reg d.lnc d.lnp d.lny d.period*, cluster(state)</span><br />
 <span>xtserial lnc lnp lny</span><br />
 <span class="math display">\[\begin{align*}
 lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span> - Model of interest</p>
-</section><section class="slide level2">
-
-<p>In order to account for time effects dummy variables (T1-T29) for each but one year are included. To include state effects there are several options. Firstly dummy variables (D2-D46) for each state can be added to the regression. Equivalently, a fixed effect within transformation can be applied to get rid of unobserved state-specific effects. If the state-specific effects can be argued to be uncorrelated with the included regressors, a random effects model can be estimated. In fact, the Hausmann test does no reject the RE model. Since the RE model yields very similar estimates we will stick with the FE model for comparative purposes.</p>
-</section><section class="slide level2">
-
-<p>Given that smoking is an addiction it is plausible that there might be serial correlation, which is confirmed by a test for serial correlation in the residuals obtained from the FD regression. Given substantial serial correlation, the FD regression should generally be preferred.</p>
-</section><section class="slide level2">
+<h2 id="subquestion-b2">subquestion b(2)</h2>
+<ul>
+<li><p>In order to account for time effects dummy variables (T1-T29) for each but one year are included.</p></li>
+<li>To include state effects there are several options.</li>
+<li>Firstly dummy variables (D2-D46) for each state can be added to the regression.</li>
+<li><p>Equivalently, a fixed effect within transformation can be applied to get rid of unobserved state-specific effects.</p></li>
+<li><p>If the state-specific effects can be argued to be uncorrelated with the included regressors, a random effects model can be estimated.</p></li>
+<li>In fact, the Hausmann test does no reject the RE model.</li>
+<li><p>Since the RE model yields very similar estimates we will stick with the FE model for comparative purposes.</p></li>
+</ul>
+<h2 id="subquestion-b3">subquestion b(3)</h2>
+<ul>
+<li>Given that smoking is an addiction it is plausible that there might be serial correlation.
+<ul>
+<li>confirmed by a test for serial correlation in the residuals obtained from the FD regression.</li>
+</ul></li>
+<li>Given substantial serial correlation, the FD regression should generally be preferred.</li>
+</ul>
+</section>
+<section class="slide level1">
 
 <p>I guess it is okay to make the presentation a bit shorter than the normal file</p>
-</section><section class="slide level2">
-
-</section></section>
-<section><section id="question-2" class="titleslide slide level1"><h1>Question 2</h1></section><section id="some-math" class="slide level2">
-<h1>Some Math</h1>
+</section>
+<section id="question-2" class="slide level1">
+<h1>Question 2</h1>
+<h2 id="some-math">Some Math</h2>
 <p><span class="math display">\[\begin{align*}
 lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span></p>
-</section><section class="slide level2">
+</section>
+<section class="slide level1">
 
 <p><span class="math display">\[\begin{align*}
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=0] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}}\\
@@ -101,30 +119,37 @@ lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+...
 &amp; E[y_{i} | a^{l}_{i}=1, s_{i}=0] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}}+\frac{\gamma}{\pi_{2}}\\
 &amp; E[y_{i} | a^{l}_{i}=1, s_{i}=1] = \alpha + \beta - \frac{1}{\pi_{2}}(\gamma (\pi_{0}+(\pi_{1}-1)+\tau(\pi_{0}+\pi_{1}-1))\\
 \end{align*}\]</span></p>
-</section><section id="more-math" class="slide level2">
-<h1>More Math</h1>
+<h2 id="more-math">More Math</h2>
 <p><span class="math display">\[\begin{align*}
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{\pi_{1}}{\pi_{2}}-\frac{\tau}{\pi_{2}}(\pi_{0}+\pi_{1}) \\
 &amp; \text{If }\pi_{0} = \pi_{1} = 0, \\
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{0}{\pi_{2}}-\frac{\tau}{\pi_{2}}(0+0) = \beta \\
 \end{align*}\]</span></p>
-</section><section id="even-more-math" class="slide level2">
-<h1>Even More Math</h1>
+<h2 id="even-more-math">Even More Math</h2>
 <p>Partial derivatives of the expenditure function with respect to prices<br />
 <span class="math display">\[\begin{align*}
 &amp;h_{1}(p,u) = \frac{{\partial}e(p,w)}{{\partial}{p_{1}}} = \frac{u}{2} \\
 &amp;h_{2}(p,u) = \frac{{\partial}e(p,w)}{{\partial}{p_{2}}} = u \\
 &amp;\rightarrow  h(p,u) = \left(\begin{array}{c}  \frac{u}{2} \\ u \end{array} \right)\end{align*}\]</span></p>
-</section><section class="slide level2">
-
-</section></section>
-<section><section id="figures" class="titleslide slide level1"><h1>Figures</h1></section><section class="slide level2">
+</section>
+<section id="figures" class="slide level1">
+<h1>Figures</h1>
+<p>Because figures are fun. First your figure, then my own one, both with a different width</p>
+<figure>
+<img src="images/quality1.png" />
+</figure>
+</section>
+<section class="slide level1">
 
 <figure>
-<img src="images/gr_1.png" style="width:80.0%" />
+<img src="images/gr_1.png" />
 </figure>
-</section><section class="slide level2">
+</section>
+<section class="slide level1">
 
+<figure>
+<img src="images/gr_2.png" />
+</figure>
 <ul>
 <li>we can also do a figure from the web
 <ul>
@@ -138,24 +163,26 @@ lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+...
 <li>Nice</li>
 </ul></li>
 </ul>
-</section><section class="slide level2">
+</section>
+<section class="slide level1">
 
 <figure>
 <img src="http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2" alt="A nice woooooow meme" /><figcaption>A nice woooooow meme</figcaption>
 </figure>
-</section><section id="conclusion" class="slide level2">
+</section>
+<section id="conclusion" class="slide level1">
 <h1>Conclusion</h1>
 <p>I hope we did not have contruct a presentaiton which makes completely sense</p>
 <p>I keep the following to know the codes for an easy copy and past:</p>
 <ul>
 <li>to get the html, type the following on one line:</li>
 </ul>
-<pre><code>pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html</code></pre>
+<pre><code>pandoc -s --mathjax --slide-level 1 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html</code></pre>
 <ul>
 <li>if you want a beamer/latex pdf, type:</li>
 </ul>
 <pre><code>pandoc --slide-level 2 --toc --toc-depth=1 -t beamer presentation.md -V theme:Montpellier -o presentation.pdf</code></pre>
-</section></section>
+</section>
     </div>
   </div>
 

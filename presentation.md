@@ -132,6 +132,10 @@ Figures
 =================
 Because figures are fun. First your figure, then my own one, both with a different width
 
+![](images/quality1.png)
+
+--------------
+
 
 ![](images/gr_1.png)
 
@@ -166,7 +170,7 @@ I keep the following to know the codes for an easy copy and past:
 - to get the html, type the following on one line:
 
 ```
-pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html
+pandoc -s --mathjax --slide-level 1 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html
 ```
 - if you want a beamer/latex pdf, type:
 
