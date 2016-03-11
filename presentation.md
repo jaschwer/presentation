@@ -132,6 +132,9 @@ Figures
 =================
 Because figures are fun. First your figure, then my own one, both with a different width
 
+![A nice woooooow meme](http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2)
+
+
 ![](images/quality1.png)
 
 --------------
@@ -154,7 +157,7 @@ Because figures are fun. First your figure, then my own one, both with a differe
 ---------
 
 
-![A nice woooooow meme](http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2)
+
 
 
 
@@ -174,7 +177,7 @@ pandoc -s --mathjax --slide-level 5 --toc --toc-depth=2 -t revealjs presentation
 ```
 
 ```
-pandoc -s --mathjax --slide-level 5 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o index.html
+pandoc -s --mathjax --slide-level 4 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o index.html
 ```
 - if you want a beamer/latex pdf, type:
 
