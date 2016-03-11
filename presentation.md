@@ -77,7 +77,8 @@ purposes.
 subquestion b(3)
 -----------------
 - Given that smoking is an addiction it is plausible that there might be
-serial correlation, which is confirmed by a test for serial correlation
+serial correlation. 
+	- confirmed by a test for serial correlation
 in the residuals obtained from the FD regression. 
 - Given substantial
 serial correlation, the FD regression should generally be preferred.
@@ -136,7 +137,7 @@ Because figures are fun. First your figure, then my own one, both with a differe
 --------------
 
 
-![](images/gr_1.png){width="80.00000%"}
+![](images/gr_1.png){width="60.00000%"}
 
 ---------
 
