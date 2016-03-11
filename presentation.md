@@ -141,6 +141,10 @@ Because figures are fun. First your figure, then my own one, both with a differe
 
 ---------
 
+![](images/gr_2.png){width="20.00000%"}
+
+
+
 - we can also do a figure from the web
 	- But I actually prefer a funny meme
 		- Because I like them
