@@ -54,29 +54,32 @@ lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+...
 subquestion b(2)
 -----------------
 
-In order to account for time effects dummy variables (T1-T29) for each
-but one year are included. 
+- In order to account for time effects dummy variables (T1-T29) for each but one year are included. 
 
-To include state effects there are several
-options. Firstly dummy variables (D2-D46) for each state can be added to
-the regression. Equivalently, a fixed effect within transformation can
+- To include state effects there are several
+options. 
+- Firstly dummy variables (D2-D46) for each state can be added to
+the regression. 
+- Equivalently, a fixed effect within transformation can
 be applied to get rid of unobserved state-specific effects. 
 
-If the
+- If the
 state-specific effects can be argued to be uncorrelated with the
 included regressors, a random effects model can be estimated. 
 
-In fact,
-the Hausmann test does no reject the RE model. Since the RE model yields
+- In fact,
+the Hausmann test does no reject the RE model. 
+- Since the RE model yields
 very similar estimates we will stick with the FE model for comparative
 purposes.
 
 
 subquestion b(3)
 -----------------
-Given that smoking is an addiction it is plausible that there might be
+- Given that smoking is an addiction it is plausible that there might be
 serial correlation, which is confirmed by a test for serial correlation
-in the residuals obtained from the FD regression. Given substantial
+in the residuals obtained from the FD regression. 
+- Given substantial
 serial correlation, the FD regression should generally be preferred.
 
 --------
