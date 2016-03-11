@@ -51,6 +51,7 @@ lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+...
 - Model of interest
 
 --------
+
 subquestion b(2)
 ----------
 
@@ -72,6 +73,7 @@ very similar estimates we will stick with the FE model for comparative
 purposes.
 
 --------
+
 subquestion b(3)
 ----------
 Given that smoking is an addiction it is plausible that there might be
