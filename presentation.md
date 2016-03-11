@@ -132,16 +132,16 @@ Figures
 =================
 Because figures are fun. First your figure, then my own one, both with a different width
 
-![](images/quality1.png){width="50.00000%"}
+![](images/quality1.png)
 
 --------------
 
 
-![](images/gr_1.png){width="60.00000%"}
+![](images/gr_1.png)
 
 ---------
 
-![](images/gr_2.png){width="20.00000%"}
+![](images/gr_2.png)
 
 
 
