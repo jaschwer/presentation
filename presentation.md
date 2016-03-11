@@ -140,11 +140,6 @@ Because figures are fun. First your figure, then my own one, both with a differe
 ![](images/gr_1.png)
 
 
----------
-
-
-![](images/gr_2.png)
-
 
 --------------
 
