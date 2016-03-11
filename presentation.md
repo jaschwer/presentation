@@ -39,7 +39,7 @@ Results can be seen in Table 1
 
 --------
 
-subquestion b
+subquestion b(1)
 ----------
 
 <span>quietly tab year, gen(period)</span>\
@@ -51,20 +51,29 @@ lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+...
 - Model of interest
 
 --------
+subquestion b(2)
+----------
 
 In order to account for time effects dummy variables (T1-T29) for each
-but one year are included. To include state effects there are several
+but one year are included. 
+
+To include state effects there are several
 options. Firstly dummy variables (D2-D46) for each state can be added to
 the regression. Equivalently, a fixed effect within transformation can
-be applied to get rid of unobserved state-specific effects. If the
+be applied to get rid of unobserved state-specific effects. 
+
+If the
 state-specific effects can be argued to be uncorrelated with the
-included regressors, a random effects model can be estimated. In fact,
+included regressors, a random effects model can be estimated. 
+
+In fact,
 the Hausmann test does no reject the RE model. Since the RE model yields
 very similar estimates we will stick with the FE model for comparative
 purposes.
 
 --------
-
+subquestion b(3)
+----------
 Given that smoking is an addiction it is plausible that there might be
 serial correlation, which is confirmed by a test for serial correlation
 in the residuals obtained from the FD regression. Given substantial
@@ -144,7 +153,7 @@ Because figures are fun. First your figure, then my own one, both with a differe
 
 
 Conclusion
-----------
+==========
 
 I hope we did not have contruct a presentaiton which makes completely sense
 
