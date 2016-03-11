@@ -174,7 +174,7 @@ pandoc -s --mathjax --slide-level 5 --toc --toc-depth=2 -t revealjs presentation
 ```
 
 ```
-pandoc -s --mathjax --slide-level 5 --toc --toc-depth=2 -t revealjs presentation.md -V theme=solarized -o index.html
+pandoc -s --mathjax --slide-level 5 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o index.html
 ```
 - if you want a beamer/latex pdf, type:
 
