@@ -170,7 +170,11 @@ I keep the following to know the codes for an easy copy and past:
 - to get the html, type the following on one line:
 
 ```
-pandoc -s --mathjax --slide-level 1 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html
+pandoc -s --mathjax --slide-level 5 --toc --toc-depth=2 -t revealjs presentation.md -V theme=solarized -o presentation.html
+```
+
+```
+pandoc -s --mathjax --slide-level 5 --toc --toc-depth=2 -t revealjs presentation.md -V theme=solarized -o index.html
 ```
 - if you want a beamer/latex pdf, type:
 
