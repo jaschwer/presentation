@@ -136,6 +136,8 @@ Because figures are fun. First your figure, then my own one, both with a differe
 
 --------------
 
+Figure 1
+-----------
 
 ![](images/gr_1.png)
 
@@ -143,6 +145,8 @@ Because figures are fun. First your figure, then my own one, both with a differe
 
 --------------
 
+Figure 2
+-----------
 
 ![](images/quality1.png)
 
@@ -153,6 +157,9 @@ Because figures are fun. First your figure, then my own one, both with a differe
 	- Nice
 
 ---------
+Figure 3
+-----------
+
 ![A nice woooooow meme](http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2)
 
 
