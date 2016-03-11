@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jakob Schwerter">
+  <title>Title Presentation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Title Presentation</h1>
+  <h2 class="author">Jakob Schwerter</h2>
+  <h3 class="date">Whatever, Tilburg University</h3>
+</section>
+<section id="TOC">
+<ul>
+<li><a href="#/hallo">Hallo</a></li>
+<li><a href="#/heading-1">Heading 1</a></li>
+<li><a href="#/heading-2">Heading 2</a></li>
+<li><a href="#/new-heading-3">New Heading 3</a></li>
+<li><a href="#/figures">Figures</a></li>
+</ul>
+</section>
+
+<section><section id="hallo" class="titleslide slide level1"><h1>Hallo</h1></section></section>
+<section><section id="heading-1" class="titleslide slide level1"><h1>Heading 1</h1></section><section id="a" class="slide level2">
+<h1>a</h1>
+<p><span>eststo: reg lnc lnp lny, cluster(state)</span><br />
+Results can be seen in Table 1</p>
+</section><section id="b" class="slide level2">
+<h1>b</h1>
+<p><span>quietly tab year, gen(period)</span><br />
+<span>eststo: xtreg lnc lnp lny period*,fe cluster(state)</span><br />
+<span>eststo: reg d.lnc d.lnp d.lny d.period*, cluster(state)</span><br />
+<span>xtserial lnc lnp lny</span><br />
+<span class="math display">\[\begin{align*}
+lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span></p>
+</section><section class="slide level2">
+
+<p>In order to account for time effects dummy variables (T1-T29) for each but one year are included. To include state effects there are several options. Firstly dummy variables (D2-D46) for each state can be added to the regression. Equivalently, a fixed effect within transformation can be applied to get rid of unobserved state-specific effects. If the state-specific effects can be argued to be uncorrelated with the included regressors, a random effects model can be estimated. In fact, the Hausmann test does no reject the RE model. Since the RE model yields very similar estimates we will stick with the FE model for comparative purposes.</p>
+</section><section class="slide level2">
+
+<p>Given that smoking is an addiction it is plausible that there might be serial correlation, which is confirmed by a test for serial correlation in the residuals obtained from the FD regression. Given substantial serial correlation, the FD regression should generally be preferred.</p>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="heading-2" class="titleslide slide level1"><h1>Heading 2</h1></section><section id="a---some-math" class="slide level2">
+<h1>a - some math</h1>
+<p><span class="math display">\[\begin{align*}
+lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span></p>
+</section><section class="slide level2">
+
+<p><span class="math display">\[\begin{align*}
+&amp; E[y_{i} | a^{l}_{i}=0, s_{i}=0] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}}\\
+&amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}} + \beta - \frac{1}{\pi_{2}} (\gamma \pi_{1} + \tau (\pi_{0}+\pi_{1}) ) \\
+&amp; E[y_{i} | a^{l}_{i}=1, s_{i}=0] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}}+\frac{\gamma}{\pi_{2}}\\
+&amp; E[y_{i} | a^{l}_{i}=1, s_{i}=1] = \alpha + \beta - \frac{1}{\pi_{2}}(\gamma (\pi_{0}+(\pi_{1}-1)+\tau(\pi_{0}+\pi_{1}-1))\\
+\end{align*}\]</span></p>
+</section><section id="b---even-mor-math" class="slide level2">
+<h1>b - even mor math</h1>
+<p><span class="math display">\[\begin{align*}
+&amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{\pi_{1}}{\pi_{2}}-\frac{\tau}{\pi_{2}}(\pi_{0}+\pi_{1}) \\
+&amp; \text{If }\pi_{0} = \pi_{1} = 0, \\
+&amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{0}{\pi_{2}}-\frac{\tau}{\pi_{2}}(0+0) = \beta \\
+\end{align*}\]</span></p>
+</section></section>
+<section><section id="new-heading-3" class="titleslide slide level1"><h1>New Heading 3</h1></section><section id="just-a-bit-of-math" class="slide level2">
+<h1>Just a bit of math</h1>
+<p>Partial derivatives of the expenditure function with respect to prices<br />
+<span class="math display">\[\begin{align*}
+&amp;h_{1}(p,u) = \frac{{\partial}e(p,w)}{{\partial}{p_{1}}} = \frac{u}{2} \\
+&amp;h_{2}(p,u) = \frac{{\partial}e(p,w)}{{\partial}{p_{2}}} = u \\
+&amp;\rightarrow  h(p,u) = \left(\begin{array}{c}  \frac{u}{2} \\ u \end{array} \right)\end{align*}\]</span></p>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="figures" class="titleslide slide level1"><h1>Figures</h1></section><section class="slide level2">
+
+<figure>
+<img src="images/gr_1.png" />
+</figure>
+</section><section class="slide level2">
+
+<ul>
+<li>we can also do a figure from the web
+<ul>
+<li>But I actually prefer a funny meme
+<ul>
+<li>Because I like them</li>
+</ul></li>
+</ul></li>
+<li>Cool, different types of points for nested bullets</li>
+</ul>
+</section><section class="slide level2">
+
+<figure>
+<img src="http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2" alt="A nice woooooow meme" /><figcaption>A nice woooooow meme</figcaption>
+</figure>
+</section><section id="conclusion" class="slide level2">
+<h1>Conclusion</h1>
+<p>I hope we did not have contruct a presentaiton which makes completely sense</p>
+<ul>
+<li>to get the html, type the following on one line:</li>
+</ul>
+<pre><code>pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html</code></pre>
+<ul>
+<li>if you want a beamer/latex pdf, type:</li>
+</ul>
+<pre><code>pandoc --slide-level 2 --toc --toc-depth=1 -t beamer presentation.md -V theme:Montpellier -o presentation.pdf</code></pre>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
