@@ -132,13 +132,10 @@ Figures
 =================
 Because figures are fun. First your figure, then my own one, both with a different width
 
-Figure 1
----------
 ![](images/quality1.png){width="50.00000%"}
 
 --------------
-Figure 2
----------
+
 
 ![](images/gr_1.png){width="60.00000%"}
 
@@ -151,8 +148,7 @@ Figure 2
 	- Nice
 
 ---------
-Figure 3
----------
+
 
 ![A nice woooooow meme](http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2)
 
