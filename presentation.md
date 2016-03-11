@@ -50,10 +50,9 @@ $$\begin{align*}
 lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}$$
 - Model of interest
 
---------
 
 subquestion b(2)
-----------
+-----------------
 
 In order to account for time effects dummy variables (T1-T29) for each
 but one year are included. 
@@ -72,10 +71,9 @@ the Hausmann test does no reject the RE model. Since the RE model yields
 very similar estimates we will stick with the FE model for comparative
 purposes.
 
---------
 
 subquestion b(3)
-----------
+-----------------
 Given that smoking is an addiction it is plausible that there might be
 serial correlation, which is confirmed by a test for serial correlation
 in the residuals obtained from the FD regression. Given substantial
