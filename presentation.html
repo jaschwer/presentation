@@ -35,70 +35,110 @@
 </section>
 <section id="TOC">
 <ul>
-<li><a href="#/hallo">Hallo</a></li>
-<li><a href="#/heading-1">Heading 1</a></li>
-<li><a href="#/heading-2">Heading 2</a></li>
-<li><a href="#/new-heading-3">New Heading 3</a></li>
+<li><a href="#/random-thoughts">Random Thoughts</a></li>
+<li><a href="#/question-1">Question 1</a></li>
+<li><a href="#/question-2">Question 2</a></li>
 <li><a href="#/figures">Figures</a></li>
+<li><a href="#/conclusion">Conclusion</a></li>
 </ul>
 </section>
 
-<section><section id="hallo" class="titleslide slide level1"><h1>Hallo</h1></section></section>
-<section><section id="heading-1" class="titleslide slide level1"><h1>Heading 1</h1></section><section id="a" class="slide level2">
-<h1>a</h1>
+<section><section id="random-thoughts" class="titleslide slide level1"><h1>Random Thoughts</h1></section><section id="seeing-the-sun-shining" class="slide level2">
+<h1>Seeing the sun shining</h1>
+<ul>
+<li>Why do I not enjoy the sun, while sitting in the library?</li>
+<li>I mean, I have to work and cannot enjoy the sun.</li>
+<li>Maybe, because I have an aim I follow and there is not much which can actually distract me from that aim.</li>
+<li>Based on the fact that I have to work on the library, it is nicer to see the sun shining.
+<ul>
+<li>Clear reason to get a spot at a window btw.</li>
+</ul></li>
+</ul>
+</section><section id="more-cheese-less-cheese" class="slide level2">
+<h1>More Cheese = Less Cheese</h1>
+<ul>
+<li>More Chesse = More Holes</li>
+<li>More Holes = Less Cheese</li>
+<li>More Cheese = Less Cheese</li>
+</ul>
+<p>just saying...</p>
+</section></section>
+<section><section id="question-1" class="titleslide slide level1"><h1>Question 1</h1></section><section id="subquestion-a" class="slide level2">
+<h1>subquestion a</h1>
 <p><span>eststo: reg lnc lnp lny, cluster(state)</span><br />
 Results can be seen in Table 1</p>
-</section><section id="b" class="slide level2">
-<h1>b</h1>
+</section><section id="subquestion-b1" class="slide level2">
+<h1>subquestion b(1)</h1>
 <p><span>quietly tab year, gen(period)</span><br />
 <span>eststo: xtreg lnc lnp lny period*,fe cluster(state)</span><br />
 <span>eststo: reg d.lnc d.lnp d.lny d.period*, cluster(state)</span><br />
 <span>xtserial lnc lnp lny</span><br />
 <span class="math display">\[\begin{align*}
-lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span></p>
+lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \\ \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span> - Model of interest</p>
+</section><section id="subquestion-b2" class="slide level2">
+<h1>subquestion b(2)</h1>
+<ul>
+<li><p>In order to account for time effects dummy variables (T1-T29) for each but one year are included.</p></li>
+<li>To include state effects there are several options.</li>
+<li>Firstly dummy variables (D2-D46) for each state can be added to the regression.</li>
+<li><p>Equivalently, a fixed effect within transformation can be applied to get rid of unobserved state-specific effects.</p></li>
+</ul>
 </section><section class="slide level2">
 
-<p>In order to account for time effects dummy variables (T1-T29) for each but one year are included. To include state effects there are several options. Firstly dummy variables (D2-D46) for each state can be added to the regression. Equivalently, a fixed effect within transformation can be applied to get rid of unobserved state-specific effects. If the state-specific effects can be argued to be uncorrelated with the included regressors, a random effects model can be estimated. In fact, the Hausmann test does no reject the RE model. Since the RE model yields very similar estimates we will stick with the FE model for comparative purposes.</p>
+<ul>
+<li><p>If the state-specific effects can be argued to be uncorrelated with the included regressors, a random effects model can be estimated.</p></li>
+<li>In fact, the Hausmann test does no reject the RE model.</li>
+<li><p>Since the RE model yields very similar estimates we will stick with the FE model for comparative purposes.</p></li>
+</ul>
+</section><section id="subquestion-b3" class="slide level2">
+<h1>subquestion b(3)</h1>
+<ul>
+<li>Given that smoking is an addiction it is plausible that there might be serial correlation.
+<ul>
+<li>confirmed by a test for serial correlation in the residuals obtained from the FD regression.</li>
+</ul></li>
+<li>Given substantial serial correlation, the FD regression should generally be preferred.</li>
+</ul>
 </section><section class="slide level2">
 
-<p>Given that smoking is an addiction it is plausible that there might be serial correlation, which is confirmed by a test for serial correlation in the residuals obtained from the FD regression. Given substantial serial correlation, the FD regression should generally be preferred.</p>
-</section><section class="slide level2">
-
+<p>I guess it is okay to make the presentation a bit shorter than the normal file</p>
 </section></section>
-<section><section id="heading-2" class="titleslide slide level1"><h1>Heading 2</h1></section><section id="a---some-math" class="slide level2">
-<h1>a - some math</h1>
-<p><span class="math display">\[\begin{align*}
-lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+... + \gamma_{46} D_{46i}+ \delta_{1} T1_{t} + ...+ \delta_{29} T29_{t}+u_{it}\end{align*}\]</span></p>
-</section><section class="slide level2">
-
+<section><section id="question-2" class="titleslide slide level1"><h1>Question 2</h1></section><section id="some-math" class="slide level2">
+<h1>Some Math</h1>
 <p><span class="math display">\[\begin{align*}
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=0] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}}\\
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}} + \beta - \frac{1}{\pi_{2}} (\gamma \pi_{1} + \tau (\pi_{0}+\pi_{1}) ) \\
 &amp; E[y_{i} | a^{l}_{i}=1, s_{i}=0] = \alpha - \gamma \frac{\pi_{0}}{\pi_{2}}+\frac{\gamma}{\pi_{2}}\\
 &amp; E[y_{i} | a^{l}_{i}=1, s_{i}=1] = \alpha + \beta - \frac{1}{\pi_{2}}(\gamma (\pi_{0}+(\pi_{1}-1)+\tau(\pi_{0}+\pi_{1}-1))\\
 \end{align*}\]</span></p>
-</section><section id="b---even-mor-math" class="slide level2">
-<h1>b - even mor math</h1>
+</section><section id="more-math" class="slide level2">
+<h1>More Math</h1>
 <p><span class="math display">\[\begin{align*}
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{\pi_{1}}{\pi_{2}}-\frac{\tau}{\pi_{2}}(\pi_{0}+\pi_{1}) \\
 &amp; \text{If }\pi_{0} = \pi_{1} = 0, \\
 &amp; E[y_{i} | a^{l}_{i}=0, s_{i}=1] - E[y_{i} | a^{1}_{i}=0, s_{i}=0]  = \beta - \gamma \frac{0}{\pi_{2}}-\frac{\tau}{\pi_{2}}(0+0) = \beta \\
 \end{align*}\]</span></p>
-</section></section>
-<section><section id="new-heading-3" class="titleslide slide level1"><h1>New Heading 3</h1></section><section id="just-a-bit-of-math" class="slide level2">
-<h1>Just a bit of math</h1>
+</section><section id="even-more-math" class="slide level2">
+<h1>Even More Math</h1>
 <p>Partial derivatives of the expenditure function with respect to prices<br />
 <span class="math display">\[\begin{align*}
 &amp;h_{1}(p,u) = \frac{{\partial}e(p,w)}{{\partial}{p_{1}}} = \frac{u}{2} \\
 &amp;h_{2}(p,u) = \frac{{\partial}e(p,w)}{{\partial}{p_{2}}} = u \\
 &amp;\rightarrow  h(p,u) = \left(\begin{array}{c}  \frac{u}{2} \\ u \end{array} \right)\end{align*}\]</span></p>
-</section><section class="slide level2">
-
 </section></section>
 <section><section id="figures" class="titleslide slide level1"><h1>Figures</h1></section><section class="slide level2">
 
+<p>Because figures are fun.</p>
+<p>Checkout the different width's ;)</p>
+</section><section id="figure-1" class="slide level2">
+<h1>Figure 1</h1>
 <figure>
-<img src="images/gr_1.png" />
+<img src="images/gr_1.png" style="width:60.0%" />
+</figure>
+</section><section id="figure-2" class="slide level2">
+<h1>Figure 2</h1>
+<figure>
+<img src="images/gr1.png" style="width:40.0%" />
 </figure>
 </section><section class="slide level2">
 
@@ -110,20 +150,32 @@ lnC_{it}= \alpha + \beta_{1}lnP_{it} + \beta_{2}lnY_{it} + \gamma_{2} D_{2i}+...
 <li>Because I like them</li>
 </ul></li>
 </ul></li>
-<li>Cool, different types of points for nested bullets</li>
+<li>Cool, different types of points for nested bullets
+<ul>
+<li>Nice</li>
+</ul></li>
 </ul>
+</section><section id="figure-3" class="slide level2">
+<h1>Figure 3</h1>
+<figure>
+<img src="http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2" alt="A nice woooooow meme" style="width:50.0%" /><figcaption>A nice woooooow meme</figcaption>
+</figure>
 </section><section class="slide level2">
 
 <figure>
-<img src="http://pl.memgenerator.pl/mem-image/wooooooow-pl-ffffff-2" alt="A nice woooooow meme" /><figcaption>A nice woooooow meme</figcaption>
+<img src="http://www.quickmeme.com/img/14/140b5483695386641c948708752a0663ef0e2f500d6cdab6175c881d626a5a60.jpg" style="width:50.0%" />
 </figure>
-</section><section id="conclusion" class="slide level2">
-<h1>Conclusion</h1>
-<p>I hope we did not have contruct a presentaiton which makes completely sense</p>
+</section></section>
+<section><section id="conclusion" class="titleslide slide level1"><h1>Conclusion</h1></section><section class="slide level2">
+
+<p>I hope we did not have to contruct a presentaiton which makes completely sense</p>
+<p>I keep the following to know the codes for an easy copy and past:</p>
+</section><section class="slide level2">
+
 <ul>
 <li>to get the html, type the following on one line:</li>
 </ul>
-<pre><code>pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o presentation.html</code></pre>
+<pre><code>pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs presentation.md -V theme=solarized -o index.html</code></pre>
 <ul>
 <li>if you want a beamer/latex pdf, type:</li>
 </ul>
